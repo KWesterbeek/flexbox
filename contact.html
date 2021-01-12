@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Contactformulier </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Over mijn katten</a></li>
+                <li><a href="about.html">Over mijzelf</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="https://nl.wikipedia.org/wiki/Sinterklaas" target="_blank">over Sinterklaas</a></li>
+                <li><a href="contact.html">Contactformulier</a></li>
+                <li><a href="recept.html">Deel je recept met mij</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="form">
+        <form name="contact" method="POST" data-netlify="true">
+            <p><label>Voornaam: <input type="text" name="voornaam" /></label></p>
+            <p><label>Achternaam: <input type="text" name="achternaam" /></label></p>
+            <p><label>E-mail adres: <input type="email" name="email" /></label></p>
+            <p><label>Boodschap: <textarea rows="6" name="message"></textarea></label></p>
+            <p><button type="submit">Verzend!</button></p>
+        </form>
+    </main>
+
+</body>
+
+</html>

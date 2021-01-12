@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Upload je recept! </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Over mijn katten</a></li>
+                <li><a href="about.html">Over mijzelf</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="https://nl.wikipedia.org/wiki/Sinterklaas" target="_blank">over Sinterklaas</a></li>
+                <li><a href="contact.html">Contactformulier</a></li>
+                <li><a href="recept.html">Deel je recept met mij</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 class="text-center">Upload hieronder een recept naar onze receptensite!</h1>
+        </section>
+        <section class="form">
+            <form name="recept" method="POST" data-netlify="true">
+                <p><label>Naam: <input type="text" name="naam" /></label></p>
+                <p><label>E-mail adres: <input type="email" name="email" /></label></p>
+                <p><label>Telefoonnummer: <input type="tel" name="phone" pattern="[0-9]{10}" /></label></p>
+                <p><label>Leeftijd: <input type="number" name="age" min="1" max="130" /></label></p>
+                <p><label>Geboortedatum: <input type="date" name="birthdate" /></label></p>
+                <p><label>Geslacht:<br>
+                        <input class="input_20" type="radio" id="non-binary" name="gender" value="non-binary" />
+                        <label for="male" class="input_75">Non-Binair</label> <br>
+                        <input class="input_20" type="radio" id="female" name="gender" value="female" />
+                        <label for="male" class="input_75">Vrouw</label> <br>
+                        <input class="input_20" type="radio" id="male" name="gender" value="male" />
+                        <label for="male" class="input_75">Man</label> <br>
+                        <input class="input_20" type="radio" id="other" name="gender" value="other" />
+                        <label for="male" class="input_75">Anders</label> <br>
+                    </label></p>
+                <p><label>Favoriete Cuisine:<br>
+                        <input class="input_20" type="checkbox" name="cuisine1" value="Frans" />
+                        <label for="male" class="input_75">Frans</label> <br>
+                        <input class="input_20" type="checkbox" name="cuisine2" value="Italiaans" />
+                        <label for="male" class="input_75">Italiaans</label> <br>
+                        <input class="input_20" type="checkbox" name="cuisine3" value="Spaans" />
+                        <label for="male" class="input_75">Spaans</label> <br>
+                        <input class="input_20" type="checkbox" name="cuisine4" value="Arabisch" />
+                        <label for="male" class="input_75">Arabisch</label> <br>
+                    </label></p>
+                <p><label>Favoriete kleur auto: <input class="input_75" type="color" name="favcolour"
+                            value="#ff0000" /></label></p>
+                <p><label>Biografie: <textarea rows="10" name="biography"></textarea></label></p>
+                <p><label>Upload je recept: <input type="file" name="recipe" /></label></p>
+                <p><label>url van je eigen recepten website: <input type="url" name="recipe_page" /></label></p>
+                <p><label>Maak het formulier leeg: <input type="reset" value="Leegmaken!" /></label></p>
+                <p><button type="submit">Verzend!</button></p>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
